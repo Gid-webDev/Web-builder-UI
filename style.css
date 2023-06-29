@@ -1,0 +1,479 @@
+
+header{
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 100px;
+    box-shadow: 0 0 2px 2px rgba(1, 1, 1, 0.5);
+}
+
+/* for menu bar */
+#toggle-btn{
+    outline: none;
+    border: none;
+}
+
+.hr-line{
+    margin-top: 75px;
+    color: transparent;
+}
+
+.navbar-brand{
+   font-size: 1.7rem;
+}
+
+.main{
+    height: 100vh;
+}
+
+
+#web-templates img{
+    align-self: center;
+    width: 200px;
+    height: 150px;
+}
+
+#web-templates .card{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+#sample-t .card{
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+    border: 0;
+}
+
+.carousel-inner img{
+    align-self: center;
+    width: 200px;
+    height: 250px;
+}
+
+#start-project{
+    background-image:url(images/marek-piwnicki-nB7eo-f4blI-unsplash.jpg);
+    width: 100%;
+    min-height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+#start-project .overlay{
+    position: absolute;
+    width: 100%;
+    min-height: 105vh;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    background-color: rgba(105, 165, 105, 0.8);
+    mix-blend-mode: overlay;
+}
+
+#business-logic{
+    width: 100%;
+    min-height: auto;
+}
+
+#business-logic p{
+    color: #bbb;
+}
+
+#first-step{
+    width: 480px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1{
+    font-size: 7em;
+}
+
+.h2{
+    
+}
+
+.more-text{
+    font-size: 1.4em;
+}
+
+.img-steps img{
+    width: 320px;
+    height: 303px;
+}
+
+.step-btn{
+    font-weight:500;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#business-logic button{
+    font-weight:500;
+    font-size: 3em;
+}
+
+.carousel-item img{
+    width: 430px;
+    height: 380px;
+}
+
+.subscribe-btn{
+    display: flex;
+    align-items: center;
+}
+
+#signup-form{
+    background-color: #f1f5fc;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* home page */
+
+.profile-sec{
+    background-color: #ecebeb;
+}
+
+#top-profile{
+    background-color: #ecebeb;
+    margin-top: 300px;
+}
+
+#top-section{
+    position: relative;
+}
+
+#heading-text{
+    font-size: 4rem;
+}
+
+.profile-dropdown{
+    background-color: #fff;
+    border-radius: 0px 0px 0 0;
+}
+
+.profile-dropdown:hover{
+    background-color: #fff;
+}
+
+#edit-tools{
+    margin: 90px 10px 60px 265px;
+    width: 80%;
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+#grid-row{
+    margin-top: 45px;
+}
+
+#top-panel{
+    width: 80%;
+}
+
+.btn-group{
+    width: 100%;
+}
+
+#ul-tools{
+    background-color: #dbd8cf;
+    border-radius: 10px;
+}
+
+#ul-tools li{
+    border-radius: 5px;
+    border: 0;
+    background-color: inherit;
+}
+
+
+#ul-tools li{
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+#edit-tools .btn:hover{
+    background-color: #696969;
+    color: #fff;
+    border-radius: 8px;
+}
+
+#profile-tools{
+    margin-top: 92px;
+    margin-left: 14px;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 220px;
+    height: 75%;
+    transition: 0.6s;
+}
+
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.fixed-top{
+    z-index: 4;
+}
+
+#row-templates .col-lg-3{
+    border-radius: 0 0 20px 20px;
+    margin-top: 40px;
+}
+
+.card{
+    padding: 0;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+
+.card p{
+    padding: 0 12px;
+}
+
+.card #image{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: 0; 
+    border-radius: 20px 20px 0 0;
+    background-image: url(images/bastian-riccardi-sXqonWEa_eQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+
+#click-me{
+    margin: 18px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    background: #fff;
+    color: #ddd;
+}
+
+#click-me:hover{
+    margin: 18px;
+    color: darkblue;
+    font-weight: bold;
+    background: #fff;
+    display: block;
+}
+
+/* login page */
+#form-col{
+    width: 25rem;
+    background-color: #f1f5fc;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* medium breaking point for home.html */
+@media(min-width:768px) {
+    header{
+        position: relative;
+        margin-bottom: 100px;
+        box-shadow: 0 0 2px 2px rgba(0 , 0, 0, 0.2);
+    
+    }
+
+    .hr-line{
+        margin-top: 75px;
+    }
+
+    
+
+    #grid-theme{position: absolute;
+        top: 130px;
+        margin: 8px 0 0 260px;
+        transition: 0.6s;
+    }
+
+
+    .h2{
+        font-size: 4rem;
+    }
+
+    #profile-tools{
+        margin-top: 100px;
+        margin-left: 14px;
+        border-radius: 6px;
+        background-color: #fff;
+        width: 220px;
+        height: 75%;
+        transition: 0.6s;
+    }
+
+    #edit-tools{
+        margin: 98px 10px 60px 265px;
+        width: 80%;
+        background-color: #fff;
+        padding: 30px 0;
+    }
+
+   
+}
+
+@media(max-width:768px){
+
+    header{
+        position: relative;
+        margin-bottom: 100px;
+        box-shadow: 0 0 2px 2px rgba(1, 1, 1, 0.5);
+       
+    }
+
+
+    .main{
+        height: 200vh;
+    }
+
+    #grid-row{
+        margin-top: 85px;
+    }
+  
+
+    #heading-text{
+        font-size: 2rem;
+    }
+
+    .profile-dropdown{
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .grid-theme{
+        margin: 75px 0 0 0px;
+        background-color: #fff;
+    }
+
+     #edit-tools{
+        border-radius: 6px;
+        z-index: 3;
+        margin: 75px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .h2{
+        font-size: 3rem;
+    }
+
+    
+
+    
+}
+
+
+@media(max-width: 576px) {
+
+    header{
+        position: relative;
+        margin-bottom: 100px;
+        box-shadow: 0 0 1px 1px rgba(1, 1, 1, 0.3);
+       
+        
+    }
+
+    #edit-tools{
+        border-radius: 6px;
+        z-index: 3;
+        margin: 75px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .main{
+        height: 120vh;
+       
+    }
+
+    #grid-row{
+        margin-top: 95px;
+    }
+
+    #toggle-btn-grid{
+        outline: none;
+        border: none;
+    }
+
+    .hr-line{
+        margin-top: 75px;
+    }
+    
+    .profile-dropdown{
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+   
+
+    #top-panel{
+        width: 72%;
+    }
+
+    #aside-tools{
+        width: 25%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .grid-theme{
+        margin: 75px 0 0 0;
+        background-color: #fff;
+    }
+    
+    .h2{
+        font-size: 2rem;
+    }
+    #form-col{
+        width: 100%;
+    }
+
+}
+
+
+#grid-templates{
+    height:100px;
+    box-shadow: 0 0 0.8px 0.8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+@media(max-width: 900px) {
+    .h1{
+        font-size: 4.5em;
+    }
+
+    .step-btn{
+        font-weight:500;
+        font-size: 1.7em;
+    }
+
+    #start-project .overlay{
+        position: absolute;
+        width: 100%;
+        min-height: 280vh;
+        background-position: center;
+        background-size: cover;
+        margin-top: 0px;
+        background-color: rgba(105, 165, 105, 0.8);
+        mix-blend-mode: overlay;
+    }
+    
+    .carousel-item img{
+        width: 380px;
+        height: 330px;
+    }
+    
+}

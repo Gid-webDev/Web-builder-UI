@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webDev.Pro</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+</head>
+<body>
+  <header class=" py-1   px-md-4  px-sm-2  fixed-top"  id="fix-header">
+    <!-- Nav tabs -->
+    <nav class="navbar navbar-expand-md navbar-warning  ms-auto">
+        <div class="container-fluid">
+          <a class="navbar-brand text-success  bi bi-browser-edge h3 fw-bold" href="#"></a>
+          <button class="navbar-toggler"   id="toggle-btn-grid"  type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="">
+                <span class="navbar-toggler-icon"> </span>
+            </div>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active  text-dark" aria-current="page" href="#">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-dark" href="#">Support</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle  text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"> <span class="i bi bi-envelope"> Email</span></a></li>
+                  <li><a class="dropdown-item" href="#"> <span class="i bi bi-telephone"> PHONE</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li class="d-flex">
+                    <a class="dropdown-item" href="#"> <div class="i bi bi-facebook"></div></a>
+                    <a class="dropdown-item" href="#"> <div class="i bi bi-twitter"></div></a>
+                    <a class="dropdown-item" href="#"> <div class="i bi bi-linkedin"></div></a>
+                    <a class="dropdown-item" href="#"> <div class="i bi bi-instagram"></div></a>
+                    <a class="dropdown-item" href="#"> <div class="i bi bi-whatsapp"></div></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-dark   bi bi-person-circle  fs-6" href="login.html" tabindex="-1" aria-disabled="true"> Login</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control  border border-success   text-success  me-2" type="search " placeholder="Search for a website" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav> 
+    
+</header> 
+<hr class="hr-line">
+
+    <!-- login modal -->
+
+    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary fw-bold" id="exampleModalToggleLabel">Sign in</h5>
+          
+          </div>
+          
+          <div class="modal-body">
+            <div class="container">
+
+              <div class="card" style="width: 100%;">
+                <div class="">
+                  <div class="col">
+                    <img src="images/landing page card.png" class="img-fluid w-100" alt="...">
+                  </div>
+                  <div class="">
+                    <div class="card-body">
+
+                        <form >
+              
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                              <label class="form-check-label" for="dropdownCheck">
+                                Remember me
+                              </label>
+                            </div>
+                          </div>
+
+                              <!-- Button to trigger modal -->
+                              <a href="" class="nav-link text-danger" data-bs-toggle="modal" data-bs-target="#forgot-password">Forgot Password?</a>                              
+
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-primary fw-bold" type="submit">Login</button>
+                            </div>
+                          </form>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            
+            <!-- reset password-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- forget password modal -->
+    <div class="modal fade" id="forgot-password" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary" id="exampleModalToggleLabel2">Password Reset</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- password reset form-->
+            <form >
+  
+               <label for="validationDefaultPassword" class="form-label"></label>
+                <input type="text" class="form-control" id="validationDefaultPassword" placeholder="Enter Password" value="" required>
+
+                <label for="validationDefaultPassword" class="form-label"></label>
+                <input type="text" class="form-control" id="validationDefaultPassword" placeholder="Confirm Password" value="" required>
+              
+                <button class="btn btn-primary fw-bold mt-3" type="submit">Reset Password</button>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Back to Sign in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+    
+    <!-- first section -->
+    <section class="main bg-white py-2  px-3">
+       <div class="row align-items-center justify-content-between">
+
+          <div class="col-md py-2 text-center text-warning">
+            
+            <img src="images/colorful.png" class=" img-fluid w-100 " alt="">
+          </div>
+          
+         <div class="col-md p3 text-center mt-2">
+            <div class="text">
+                
+
+                <div id="carouselExampleSlidesOnly sign-slide" class="carousel slide " data-bs-ride="carousel"  style="width: 100%;">
+                  <div class="carousel-inner">
+    
+                    <!-- slide 1 -->
+                    <div class="carousel-item mt-5 active"  style="height: 15rem;">
+
+                      <h1 class="text-center h2 text-dark "> 
+                        <span class="text-success">Are</span> you Ready<span>?</span>
+                      </h1>
+
+                      <p class="lead">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+                         amet culpa? Odio praesentium consequatur incidunt.
+                    </p>
+                      
+                    </div>
+                    
+                    <!-- slide 2 -->
+                    <div class="carousel-item mt-5"  style="height: 15rem;">
+
+                      <h1 class=" h2 text-primary">Build your website</h1>
+                        <p class="lead">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+                          amet culpa? Odio praesentium consequatur incidunt.
+                        </p>  
+                      
+                     
+                    </div>
+
+                    <!-- slide  -->
+                    <div class="carousel-item mt-5"  style="height: 15rem;">
+
+                      <h1 class=" h2 text-primary">In ten <span class="text-success"> Minutes</span></h1>
+                        <p class="lead">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+                          amet culpa? Odio praesentium consequatur incidunt.
+                        </p>  
+                      
+                     
+                    </div>
+
+                  </div>
+                </div>
+                <a href="login.html" class="btn  bg-dark  text-light    px-4 bi bi-chevron-right">
+                 Take the first step <Span class="bi bi-rocket-takeoff"> 
+                 </Span>
+                </a>
+                
+                
+
+            </div>
+        </div>
+
+       </div>
+        
+    </section>
+
+    <!--- sample templates-->
+    <div class="section bg-light py-3 px-3">
+        
+        <div class="px-2">
+            <div class="text text-dark">
+                <h1 class="h1">Beautiful <span class="text-warning">editable templates</span></h1>
+                <p class="lead">
+                    1000+ awesome custom templates Pick customise to your taste and deploy for free 
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos iusto sequi dolores cumque. Laudantium facere animi molestias corporis voluptate hic reprehenderit, non mollitia commodi quia fuga, architecto possimus maxime!
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row" id="sample-t">
+
+          <div class="col-md mt-5">
+              <div class="card bg-white" style="width: 100%;">
+                  <img src="images/landing page card.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Landing Pages</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="signup.html" class="btn btn-outline-dark px-4 bi bi-airplane-fill"> <Span class="">Make a Landing Page</Span></a>
+                  </div>
+                </div>
+          </div>
+
+
+          <div class="col-md mt-5">
+              <div class="card bg-white" style="width: 100%; ">
+                  <img src="images/website card.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Website</h5>
+                    <p class="card-text">Some quick customizable templates</p>
+                    <a href="signup.html" class="btn btn-outline-dark px-4 bi bi-globe"> <Span class="">Build a website</Span></a>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-md mt-5">
+              <div class="card bg-white" style="width: 100%;">
+                  <img src="images/blog card.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Blogs</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="signup.html" class="btn btn-outline-dark px-4 bi bi-cup-hot-fill"><Span class=""> Create a Blog</Span></a>
+                  </div>
+                </div>
+          </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- Take a step -->
+    <section class=" bg-dark" id="start-project" >
+      <div class="overlay "></div>
+       <div class="container start-project">
+        <div class="row pt-4 g-2 p-2">
+          <p class="text-start h1 text-dark pl-2"> 
+            <span class="text-info">Are</span> you Ready<span class="text-info">?</span>
+          </p>
+          
+          <div class="col-md  m-2 text-md-start text-sm-center" id="all-steps">
+             <p class="more-text p-2 text-light">Spin up a project in seconds, configure your build, test edge and serverless functions, 
+              and deploy globally — all from your command line.
+            </p>
+            <div class="img-steps">
+              <img src="images/steps theme.png" class="img-fluid" alt="">
+            </div> 
+          </div>
+
+          <div class="col-md p-2 m-2 text-center" id="first-step">
+            <div >
+              <button class="btn btn-lg text-light step-btn "><span class="bi bi-arrow-right-circle-fill text-info"></span> Take Your First Step </button>
+            </div>
+          </div>
+
+         </div>
+       </div>
+    </section>
+
+    <!-- Business logic -->
+    <section class=" bg-white" id="business-logic" >
+      <div class="overlay "></div>
+       <div class="container start-project">
+        <div class="row pt-3 g-2 p-1">
+          <p class="text-start h1 pl-2  text-dark"> 
+             Business Oriented Styles
+          </p>
+
+          <div class="col-md p-2 m-1 text-center " id="first-step">
+            <div >
+              <p class="more-text p-2">Spin up a project in seconds, configure your build, test edge and serverless functions, 
+                and deploy globally — all from your device.
+              </p>
+
+              <a href="#" class="btn bi bi-unlock-fill  btn-dark"> Unlock your Projects - <span class="bi bi-files"></span></a>
+              
+            </div>
+          </div>
+
+          <div class="col-md  m-1 text-md-start text-sm-center" id="all-steps"> 
+            
+            <div class="" id="video-ad">
+                
+                <div class="carousel-item active" >
+                  <a href="login.html">
+                     <video src="video/pexels-craig-dennis-854213-1920x1080-24fps.mp4" 
+                     autoplay loop
+                     class="img-fluid  rounded-5">
+                   </video>
+                 </a>
+                  
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                
+              </div>
+
+            
+
+
+
+
+
+
+
+
+            
+           
+
+         </div>
+       </div>
+    </section>
+    
+
+    <section class="news text-light "  style="background-color: rgb(32, 128, 32);">
+      <div class="mx-4 row">
+
+        <div class="col-md">
+          <p class="subscribe h2"> Subscribe Now</p>
+        <p class="more-text text-start">keep up with all updates & news</p>
+      </div>
+
+      <div class="col-md subscribe-btn">
+        <div class="input-group mb-3 w-100">
+          <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Recipient's email" aria-describedby="button-addon2">
+          <button class="btn btn-dark" type="button" id="button-addon2">SUBSCRIBE</button>
+        </div>
+        </div>
+
+      </div>
+      
+    </section>
+    
+    
+    <!-- Accordion items-->
+    <section class="muted">
+      <div class="container py-5">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+          <!-- first accordion item-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Our-Brand" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Our Brand
+                </button>
+              </h2>
+              <div id="Our-Brand" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for the website builder brand,
+                   which is intended to showcase the brand and all it stands for.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Fugit architecto commodi doloribus optio excepturi dolores 
+                  laboriosam dolorum dignissimos assumenda distinctio, fuga aliquam culpa quidem. 
+                  Voluptatibus facere totam eaque dolorum ipsum.
+                </div>
+              </div>
+            </div>
+
+            <!-- 3rd accordion item-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Product-offerrings" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Product offerrings
+                </button>
+              </h2>
+              <div id="Product-offerrings" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="row" id="web-templates">
+
+                    <h1>Beautiful <span class="text-warning">editable templates</span>
+                    </h1>
+                      <p class="lead">
+                          1000+ awesome custom templates Pick customise to your taste and deploy for free 
+                     </p>
+
+                    <!-- Landing page templates -->
+                    <div class="col-lg mt-5">
+                        <div class="card bg-white text-secondary border-light" style="width: 100%;">
+                            <img src="images/landing page card.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text lead">Some quick example to help speed-up the 
+                                build process and make your landing page speak on your behalf.</p>
+                              <a href="signup.html" class="btn btn-white "><Span class=" text-secondary"><span class="bi bi-chevron-right"></span> LANDING PAGE</Span></a>
+                            </div>
+                          </div>
+                    </div>
+          
+                    <!-- website templates-->
+                    <div class="col-lg mt-5">
+                      <div class="card bg-white text-secondary border-light" style="width: 100%;">
+                          <img src="images/desktop theme.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text lead">Some quick example to help speed-up the 
+                              build process and make your landing page speak on your behalf.</p>
+                            <a href="signup.html" class="btn btn-white"><Span class="text-secondary bi bi-chevron-right"> WEBSITE</Span></a>
+                          </div>
+                        </div>
+                  </div>
+          
+                  <!-- blog templates -->
+                  <div class="col-lg mt-5">
+                    <div class="card bg-white text-secondary border-light" style="width: 100%;">
+                        <img src="images/blog card.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text lead">Some quick example to help speed-up the 
+                            build process and make your landing page speak on your behalf.</p>
+                          <a href="signup.html" class="btn btn-white"><Span class=" text-secondary bi bi-chevron-right"> BLOGS</Span></a>
+                        </div>
+                      </div>
+                </div>
+
+                
+          
+          
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fifth accordion item-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Contact" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Contact
+                </button>
+              </h2>
+              <div id="Contact" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  
+                  <div class="text mb-4">
+                    <h2 class="text-secondary">Reach out to us</h2>
+                    <p class="text-secondary lead">
+                      Our customer care team is always on standyby to recieve your calls and chat via <span class="text-success">whatsapp.</span>  
+                      You can also reach out by sending us an email to our email channel and 
+                      we will respond to your emails within 24hrs 
+
+                    </p>
+                  </div>
+                  <ul class="row nav g-3 text-secondary">
+                      <li><a class="col dropdown-item link d-flex justify-content-between" href="#">  Email  <span class="i bi bi-envelope text-danger"> </span></a></li>
+                      <li><a class="col dropdown-item link  d-flex justify-content-between " href="#"> Phone <span class="i bi bi-telephone"></span></a></li>
+                      <li><a class="col dropdown-item link d-flex justify-content-between" href="#"> Whatsapp <span class="i bi bi-whatsapp text-success"> </span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sixth accordion item-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Follow-us" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Follow us
+                </button>
+              </h2>
+              <div id="Follow-us" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="text mb-4">
+                    <h3 class="text-primary">
+                      Stay in touch with the latest trend 
+                   </h3>
+                   <p class="lead">
+                    catchup with all the news and updates when it is trending <span class="text-danger">live</span> on our 
+                    social media plateform <div class="text-secondary">Don't forget to follow us <span class="bi bi-people-fill text-primary"></span> Like our page <span class="bi bi-tumb"></span> and leave comments</div>
+
+                   </p>
+
+                  </div>
+                  <ul>
+                    <li class="d-flex">
+                      <a class="dropdown-item" href="#"> <div class="i bi bi-facebook text-primary"></div></a>
+                      <a class="dropdown-item" href="#"> <div class="i bi bi-telegram text-success"></div></a>
+                      <a class="dropdown-item" href="#"> <div class="i bi bi-linkedin text-primary"></div></a>
+                      <a class="dropdown-item" href="#"> <div class="i bi bi-instagram text-danger"></div></a>
+                      <a class="dropdown-item" href="#"> <div class="i bi bi-twitter text-primary"></div></a>
+                     
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+    </div>
+    </section>
+
+    <footer class="footer footer-warning footer-light">
+        <div class="text-center p-2">
+            <p>copyright &copy;<span>gideon.webdev.pro</span></p>
+        </div>
+
+    </footer>
+
+
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
